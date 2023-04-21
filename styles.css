@@ -18,7 +18,7 @@ body {
 .container {
   position: relative;
   width: 400px;
-  height: 605px;
+  height: 105px;
   background: #fff;
   padding: 28px 32px;
   overflow: hidden;
@@ -116,4 +116,72 @@ body {
   align-items: center;
   width: 50%;
   height: 100px;
+}
+
+.weather-details .humidty{
+  padding-left: 20px;
+  justify-content: flex-end;
+}
+
+.weather-details .wind{
+  padding-left: 20px;
+  justify-content: flex-end;
+}
+
+
+.weather-details i{
+  color: #06283d;
+  font-size: 26px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+
+.weather-details span{
+  color: #06283d;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-details p{
+  color: #06283d;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.location-error{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  scale: 0;
+  opacity: 0;
+  display: none;
+}
+
+.location-error img{
+  width: 70%;
+}
+
+.location-error p{
+  color: #06283d;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.weather-container, .weather-details{
+  scale: 0;
+  opacity: 0;
+}
+
+.fade-in{
+  animation: .05s fadeIn forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+  to {
+    scale:1;
+    opacity: 1;
+  }
 }
