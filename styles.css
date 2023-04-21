@@ -104,4 +104,16 @@ body {
   text-transform: capitalize;
 }
 
+.weather-details{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
 
+.weather-details .humidity, .weather-details .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+}
