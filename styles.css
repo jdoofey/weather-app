@@ -18,7 +18,7 @@ body {
 .container {
   position: relative;
   width: 400px;
-  height: 105px;
+  height: 605px;
   background: #fff;
   padding: 28px 32px;
   overflow: hidden;
@@ -74,5 +74,34 @@ body {
 }
 
 .weather-container {
-  
+  text-align: center;
 }
+
+.weather-container img{
+  width: 60%;
+  margin: 30px;
+}
+
+.weather-container .temp{
+  position: relative;
+  color: #06283d;
+  font-size: 4em;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: -16px;
+}
+
+.weather-container .temperature span{
+  position: absolute;
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.weather-container .description{
+  color: #06283d;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+
