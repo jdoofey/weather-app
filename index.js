@@ -62,6 +62,7 @@ search.addEventListener('click', () => {
 
 
       temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+      //parseInt(json.main.temp)*9.0/5.0) + 32   <- FAHRENHEIGHT CALCULATION
       description.innerHTML = `${json.weather[0].description}`;
       humidity.innerHTML = `${json.main.humidity}%`;
       wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
@@ -75,3 +76,54 @@ search.addEventListener('click', () => {
 
 
 });
+
+// EXAMPLE RESPONSE FROM API
+// {
+//   "coord": {
+//     "lon": 10.5,
+//       "lat": 51.5
+//   },
+//   "weather": [
+//     {
+//       "id": 500,
+//       "main": "Rain",
+//       "description": "light rain",
+//       "icon": "10n"
+//     }
+//   ],
+//     "base": "stations",
+//       "main": {
+//     "temp": 13.94,
+//       "feels_like": 13.69,
+//         "temp_min": 12.25,
+//           "temp_max": 14.09,
+//             "pressure": 1008,
+//               "humidity": 88,
+//                 "sea_level": 1008,
+//                   "grnd_level": 972
+//   },
+//   "visibility": 10000,
+//     "wind": {
+//     "speed": 1.56,
+//       "deg": 215,
+//         "gust": 2.11
+//   },
+//   "rain": {
+//     "1h": 0.13
+//   },
+//   "clouds": {
+//     "all": 100
+//   },
+//   "dt": 1682207982,
+//     "sys": {
+//     "type": 2,
+//       "id": 2021121,
+//         "country": "DE",
+//           "sunrise": 1682222773,
+//             "sunset": 1682274373
+//   },
+//   "timezone": 7200,
+//     "id": 2921044,
+//       "name": "Germany",
+//         "cod": 200
+// }
